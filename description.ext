@@ -1,1 +1,20 @@
+class Header 
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 24;
+};
+
 respawn = "BASE";
+
+class CfgMusic
+{
+	sounds[]={};
+
+	class Jgirl
+	{
+		name = "Jgirl";
+		sound[] = {"\sound\jgirl.ogg", db+10, 1.0};
+		titles[] = {0,""};
+	};
+}

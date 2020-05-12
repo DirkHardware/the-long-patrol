@@ -5,7 +5,9 @@ _isJIP = _this select 1;
 
 if (!_isJIP) then 
 {
+    playMusic "01";
     [1, "BLACK", 4, 1] spawn BIS_fnc_fadeEffect;
+
 } else {
     hint "Why are you so late?";
 };
