@@ -7,6 +7,31 @@ class Header
 
 respawn = "BASE";
 
+class CfgSounds
+{
+	sounds[]={};
+
+	class Bomber 
+	{
+		name = "Bomber";
+		sound[]= {"\sound\bomber.ogg", db+10, 1.0};
+		titles[] = {0, ""};
+	}
+
+	class Jgirl
+	{
+		name = "Jgirl";
+		sound[] = {"\sound\jgirl.ogg", db+5, 1.0};
+		titles[] = {0,""};
+	};
+
+	class Callme 
+	{
+		name = "Callme";
+		sound[] = {"\sound\callme.ogg", db+5, 1.0};
+	};
+};
+
 class CfgMusic
 {
 	sounds[]={};
@@ -14,7 +39,14 @@ class CfgMusic
 	class Jgirl
 	{
 		name = "Jgirl";
-		sound[] = {"\sound\jgirl.ogg", db+10, 1.0};
+		sound[] = {"\sound\jgirl.ogg", db+5, 1.0};
 		titles[] = {0,""};
 	};
-}
+
+	class Callme 
+	{
+		name = "Callme";
+		sound[] = {"\sound\callme.ogg", db+5, 1.0};
+	};
+};
+
