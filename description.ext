@@ -5,6 +5,10 @@ class Header
 	maxPlayers = 24;
 };
 
+#include "defines.hpp"
+#include "dialogs.hpp"
+
+
 respawn = "BASE";
 
 class CfgFunctions
