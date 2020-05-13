@@ -7,6 +7,11 @@ class Header
 
 respawn = "BASE";
 
+class CfgFunctions
+{
+	#include "functions\functions.hpp"
+};
+
 class CfgSounds
 {
 	sounds[]={};
