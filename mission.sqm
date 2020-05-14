@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4746.7998,95.662689,5006.7637};
-		dir[]={-0.64894581,-0.58603245,0.48546335};
-		up[]={-0.46928772,0.81012642,0.35106581};
-		aside[]={0.59909743,4.786707e-007,0.80084658};
+		pos[]={4677.833,17.823093,5069.9082};
+		dir[]={-0.10201342,-0.78620976,0.60967314};
+		up[]={-0.12973873,0.61784458,0.77538311};
+		aside[]={0.98642272,9.5336873e-008,0.16505112};
 	};
 };
 binarizationWanted=0;
@@ -2500,14 +2500,14 @@ class Mission
 				class Item3
 				{
 					dataType="Waypoint";
-					position[]={4680,4.7075939,5063};
+					position[]={4673,4.5,5083};
 					type="Join";
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=513;
-					atlOffset=0.5;
+					atlOffset=0.29240608;
 					class AttachedTo
 					{
 						id=131;
@@ -6908,7 +6908,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4680,4.209033,5063.0498};
+						position[]={4673,4.0014391,5083.0498};
 						angles[]={0,5.8958793,0};
 					};
 					side="West";
@@ -7025,6 +7025,7 @@ class Mission
 					};
 					id=131;
 					type="OPTRE_UNSC_Marine_Soldier_SquadLead";
+					atlOffset=-0.10499954;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7073,6 +7074,7 @@ class Mission
 			{
 			};
 			id=511;
+			atlOffset=-0.10499954;
 		};
 		class Item147
 		{

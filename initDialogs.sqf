@@ -28,7 +28,7 @@ sarge setVariable ["dialogState", "AA"];
 sarge setVariable ["dialogStart", "AA"];
 sarge setVariable ["dialogName", "Lt. Turk"];
 sarge setVariable ["dialogTextAA", ["Good of you to finally show up.", "More meat for the grinder.", "Ah, to be fresh off the elevator again."]];
-_rsp = "What's going on here? Why is this place under guard?";
+_rsp = "So what exactly happened here?";
 sarge RESP("AA",1,_rsp)
 sarge ACT("AA",1,"AB")
 _rsp = "Your people should go back where you came from, pig!";
@@ -37,13 +37,13 @@ sarge ACT("AA",2,"AC")
 sarge ACT("AA",3,"AA")
 
 
-_rsp = "Well, some dickheads down the road thought it would send a nice message if they shot up a truck full of medical supplies as it was leaving this airfield.  Turns out there were some American journalists on board, so when Washington found out the only logical choice was an armed incursion.  <1,2,3: Continue...>";
+_rsp = "Same thing that's been happening since the dawn of argiculture. Bunch of working class schmucks decided they were getting pushed too hard, withheld their labor, in this case farming sugarcane. Then a bunch of middle class people took having to pay an extra buck for a luxury item personally and sent the Planetary Militia in to quash the strike.  <1,2,3: Continue...>";
 sarge TEXT("AB",_rsp)
 sarge ACT("AB",1,"AB_1")
 sarge ACT("AB",2,"AB_1")
 sarge ACT("AB",3,"AB_1")
 
-sarge TEXT("AB_1","< . . . >")
+sarge TEXT("AB_1","They didn't realize militias are also mostly comprised of working class schmucks, so most of the Planatary Militia flipped. Now the strike is a full blown insurrection.")
 _rsp = "Well, your people should go back where you came from, pig!";
 sarge RESP("AB_1",1,_rsp)
 sarge ACT("AB_1",1,"AC")
