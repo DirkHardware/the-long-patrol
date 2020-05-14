@@ -26,8 +26,8 @@
 
 sarge setVariable ["dialogState", "AA"];
 sarge setVariable ["dialogStart", "AA"];
-sarge setVariable ["dialogName", "Sgt. Hartman"];
-sarge setVariable ["dialogTextAA", ["Get out of my face, dirtbag!", "Is there a problem, maggot?", "Get your filthy pedestrian boots off of my taxiway!"]];
+sarge setVariable ["dialogName", "Lt. Turk"];
+sarge setVariable ["dialogTextAA", ["Good of you to finally show up.", "More meat for the grinder.", "Ah, to be fresh off the elevator again."]];
 _rsp = "What's going on here? Why is this place under guard?";
 sarge RESP("AA",1,_rsp)
 sarge ACT("AA",1,"AB")
