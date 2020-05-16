@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4677.833,17.823093,5069.9082};
-		dir[]={-0.10201342,-0.78620976,0.60967314};
-		up[]={-0.12973873,0.61784458,0.77538311};
-		aside[]={0.98642272,9.5336873e-008,0.16505112};
+		pos[]={5470.0596,593.74957,3460.1729};
+		dir[]={-0.40684229,-0.60855144,0.68145776};
+		up[]={-0.3119694,0.79333043,0.52254558};
+		aside[]={0.85873526,-5.273032e-007,0.51268363};
 	};
 };
 binarizationWanted=0;
@@ -2106,13 +2106,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4678,5.0314379,5072.0498};
+						position[]={4678,5.0314393,5072.0498};
 						angles[]={0,5.8958793,0};
 					};
 					side="West";
 					flags=3;
 					class Attributes
 					{
+						name="Robby";
 						class Inventory
 						{
 							class primaryWeapon
@@ -2164,7 +2165,7 @@ class Mission
 									class Item0
 									{
 										name="1Rnd_HE_Grenade_shell";
-										count=3;
+										count=2;
 										ammoLeft=1;
 									};
 								};
@@ -2183,7 +2184,7 @@ class Mission
 					};
 					id=132;
 					type="OPTRE_UNSC_Marine_Soldier_TeamLead";
-					atlOffset=0.82240486;
+					atlOffset=0.82240629;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2226,6 +2227,25 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Robert Nozick";
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="face";
 							expression="_this setface _value;";
 							class Value
@@ -2243,7 +2263,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						nAttributes=4;
 					};
 				};
 				class Item1
@@ -2258,6 +2278,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
+						name="lao";
 						class Inventory
 						{
 							class primaryWeapon
@@ -2373,7 +2394,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Tzu Lao";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="AsianHead_A3_06";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 				class Item2
@@ -2381,14 +2440,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4677,5.0964384,5071.0498};
+						position[]={4677,5.0964394,5071.0498};
 						angles[]={0,5.8958626,0};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
-						init="call{this allowdamage false}";
+						init="call{_nil = this execVM ""dialogEnable.sqf""}";
+						name="jb";
 						isPlayable=1;
 						class Inventory
 						{
@@ -2453,7 +2513,7 @@ class Mission
 					};
 					id=134;
 					type="OPTRE_UNSC_Army_Soldier_Rifleman_AR_OLI";
-					atlOffset=0.8874054;
+					atlOffset=0.88740635;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2494,20 +2554,39 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Jeremy B.";
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item3
 				{
 					dataType="Waypoint";
-					position[]={4673,4.5,5083};
+					position[]={4673,4.7075939,5083};
 					type="Join";
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=513;
-					atlOffset=0.29240608;
+					atlOffset=0.5;
 					class AttachedTo
 					{
 						id=131;
@@ -2519,7 +2598,7 @@ class Mission
 			{
 			};
 			id=130;
-			atlOffset=0.82240486;
+			atlOffset=0.82240629;
 		};
 		class Item48
 		{
@@ -4003,26 +4082,26 @@ class Mission
 				class Item2
 				{
 					dataType="Waypoint";
-					position[]={4757,143,4229};
+					position[]={4757,241,4229};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=230;
 					type="Move";
-					atlOffset=135.46001;
+					atlOffset=233.46001;
 				};
 				class Item3
 				{
 					dataType="Waypoint";
-					position[]={5431.6084,56.743244,2462.7686};
+					position[]={5432,446,2463};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=231;
 					type="Move";
-					atlOffset=-7.6293945e-006;
+					atlOffset=389.27499;
 				};
 				class Item4
 				{
@@ -4756,7 +4835,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4664,4.2414384,5098.0498};
+						position[]={4665,4.2364388,5098.0498};
 						angles[]={0,1.4229232,0};
 					};
 					side="West";
@@ -4843,7 +4922,6 @@ class Mission
 					};
 					id=347;
 					type="FEM_NATO_M81_rolled_F";
-					atlOffset=-4.7683716e-007;
 				};
 				class Item1
 				{
@@ -4941,7 +5019,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4662,4.2614393,5098.0498};
+						position[]={4661,4.2664394,5098.0498};
 						angles[]={0,1.598567,0};
 					};
 					side="West";
@@ -5032,7 +5110,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4661,4.2664394,5098.0498};
+						position[]={4659,4.2814388,5098.0498};
 						angles[]={0,1.4527932,0};
 					};
 					side="West";
@@ -5174,7 +5252,6 @@ class Mission
 			{
 			};
 			id=346;
-			atlOffset=-4.7683716e-007;
 		};
 		class Item115
 		{
@@ -6908,7 +6985,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4673,4.0014391,5083.0498};
+						position[]={4673,4.209033,5083.0498};
 						angles[]={0,5.8958793,0};
 					};
 					side="West";
@@ -7025,7 +7102,6 @@ class Mission
 					};
 					id=131;
 					type="OPTRE_UNSC_Marine_Soldier_SquadLead";
-					atlOffset=-0.10499954;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7074,7 +7150,6 @@ class Mission
 			{
 			};
 			id=511;
-			atlOffset=-0.10499954;
 		};
 		class Item147
 		{
