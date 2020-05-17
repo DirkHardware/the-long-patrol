@@ -7,7 +7,8 @@ if (isServer) then {
 	//if statements use random number to pick spawnpoint
 	if (_rndnum == 0) then {
 		//waypoints assigned using the coordinates of map markers
-		_grp1 = [getMarkerPos "village1_spawn1a", east, ["CUP_O_Partisans_Engineer", "CUP_O_Partisans_Engineer"],[],[],[],[],[],180] call BIS_fnc_spawnGroup;
+		//This is the sugarcane patch at the edge of town
+		_grp1 = [getMarkerPos "village1_spawn1a", east, ["OPTRE_Ins_ER_Farmer"],[],[],[],[],[],180] call BIS_fnc_spawnGroup;
 		_wp1 = _grp1 addWaypoint [getmarkerpos "vil1_grp1_wp1", 0];
 		_wp1 setWaypointType "SAD"; 
 		_wp1 setWaypointSpeed "FULL";
@@ -15,7 +16,8 @@ if (isServer) then {
 		_wp1 setWaypointFormation "WEDGE";
 	}
 	else {
-		_grp1 = [getMarkerPos "village1_spawn1b", east, ["CUP_O_Partisans_Engineer", "CUP_O_Partisans_Engineer"],[],[],[],[],[],180] call BIS_fnc_spawnGroup;
+		//This is behind a nearby building
+		_grp1 = [getMarkerPos "village1_spawn1b", east, ["CUP_Ins_ER_Hacker"],[],[],[],[],[],180] call BIS_fnc_spawnGroup;
 		_wp1 = _grp1 addWaypoint [getmarkerpos "vil1_grp1_wp1", 0];
 		_wp1 setWaypointType "SAD"; 
 		_wp1 setWaypointSpeed "FULL";

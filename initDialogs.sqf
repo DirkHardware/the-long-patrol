@@ -51,14 +51,13 @@ sarge ACT("AB",3,"AB_1")
 sarge TEXT("AB_1","They didn't realize militias are also mostly comprised of working class schmucks, so most of the Planatary Militia flipped. Now the strike is a full blown insurrection.")
 _rsp = "So our job is to put down the strike and end the conflict?";
 sarge RESP("AB_1",1,_rsp)
+sarge ACT("AB_1", 1, "AC")//<-------make sure to check if this works.
 //Holy Bologna! The way this janky script works is by passing the current dialog state and the response number into one string with no spaces as the 1st argument of setVariable (hence dialogActAB_11 for the 1st response to TEXT AB_1), then adding an array as the 2nd argument, with something in index 0 (I'm not sure what this is, maybe a state for future reference?) and a string with a bunch of sqf commands in it. WTF! Thats how you get commands to execute on RESP
-sarge setVariable["dialogActAB_11", ["AF", 
-   "removeAllWeapons player;
-    hint 'something has has happened';"
+// sarge setVariable["dialogActAB_11", ["AF", 
+//    "removeAllWeapons player;
+//     hint 'something has has happened';
 	//closeDialog 0;
-]];
-
-//Remember to comment the above out and set it move to TEXT AC again."
+// ]];
 
 sarge TEXT("AC","Fuck no! I'm not dying over the shit they put in upscale candy bars. <1,2,3: Continue...>")
 sarge ACT("AC",1,"AC_1")
@@ -117,7 +116,7 @@ jb ACT("JB_AA_2", 2, "JB_AA_3B")
 
 jb TEXT("JB_AA_3B", "Man, old timey philosophy was fuckin' wild bro.")
 
-_rsp = "You still haven't made your case.";
+_rsp = "You don't know the half of it. I still don't get your argument though. ";
 jb RESP("JB_AA_3B", 1, _rsp)
 jb ACT("JB_AA_3B", 1, "JB_AA_4")
 
