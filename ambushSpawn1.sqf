@@ -21,9 +21,9 @@ if (_rndnum == 1) then {
 	_crew2 = createGroup EAST;
 	_crewman = "OPTRE_Ins_ER_Farmer" createUnit [getMarkerPos "amb1_spawn1b_v2", _crew2];
 	// _crewman moveInDriver car2;
-	_wp1c = _crew2 addWayPoint [(getMarkerPos "amb1_grp1_wp2"), 1];
-	_wp1c setWaypointType "MOVE";
-	_wp1c setWaypointSpeed "FULL";
+	// _wp1c = _crew2 addWayPoint [(getMarkerPos "amb1_grp1_wp2"), 1];
+	// _wp1c setWaypointType "MOVE";
+	// _wp1c setWaypointSpeed "FULL";
 
 }; 
 
