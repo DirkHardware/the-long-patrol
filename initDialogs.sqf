@@ -146,3 +146,19 @@ jez RESP("jez_AB00_1b", 1, _rsp)
 jez ACT("jez_AB00_1b", 1, "jez_AB00_2")
 
 jez TEXT("jez_AB00_2", "Now I ain't sayin' this setup's a paradise. But the way I figure, you gotta be pretty fucking entitled to starve your neighbors over a paycheck.")
+_rsp = "They're not entitled, they're oppressed.";
+jez RESP("jez_AB00_2", 1, _rsp)
+jez ACT("jez_AB00_2", 1, "jez_ABA0")
+
+jez TEXT("jez_ABA0", "Big talk from the guy who signed up to shoot the oppressed for money. My mom worked two jobs a'ight? Both were in a titanium mine. Don't think I don't know what a hard knock life looks like. Yeah these guys could have it better... <1,2,3: Continue...>")
+jez ACT("jez_ABA0", 1, "jez_ABA0_1")
+jez ACT("jez_ABA0", 2, "jez_ABA0_1")
+jez ACT("jez_ABA0", 3, "jez_ABA0_1") 
+ 
+jez TEXT("jez_ABA0_1", "But if justice involves making things better for one person at the expense of others, I got some friends who'd like their cases retried.")
+_rsp = "Damn, fair point.";
+jez RESP("jez_ABA0_1", 1, _rsp)
+jez ACT("jez_ABA0_1", 1, "ABAA")
+_rsp = "But somehow you shooting multiple people over a fight you don't care about is cool.";
+jez RESP("jez_ABA0_1", 2, _rsp)
+jez ACT("jez_ABAO_1", 2, "ABAB")
