@@ -70,7 +70,7 @@ sarge ACT("AC_1",2,"AA")
 sarge ACT("AC_1",3,"AA")
 
 
-// J.B.'s Dialog 
+// Jez's Dialog 
 
 jez setVariable ["dialogState", "jez_START"];
 jez setVariable ["dialogStart", "jez_START"];
@@ -80,85 +80,85 @@ jez setVariable ["dialogTextjez_START", ["Yessir?", "What can I do for ya?", "Ma
 _rsp = "So what's your take on this shitshow?";
 
 jez RESP("jez_Start", 1, _rsp)
-jez ACT("jez_Start", 1, "jez_A000")
+jez ACT("jez_Start", 1, "jez_A0000")
 
-jez TEXT("jez_A000", "The way I see it, it's our moral obligation to kick the shit out of these yokels.")
+jez TEXT("jez_A0000", "The way I see it, it's our moral obligation to kick the shit out of these yokels.")
 // jez ACT("jez_A000", 1, "jez_START")
 _rsp = "How do you figure?";
-jez RESP("jez_A000", 1, _rsp)
-jez ACT("jez_A000", 1, "jez_AA00")
-jez ACT("jez_A000", 2, "jez_START")
-jez ACT("jez_A000", 3, "jez_START")
+jez RESP("jez_A0000", 1, _rsp)
+jez ACT("jez_A0000", 1, "jez_AA000")
+jez ACT("jez_A0000", 2, "jez_START")
+jez ACT("jez_A0000", 3, "jez_START")
 
-jez TEXT("jez_AA00", "Who was that smart guy from olden times? The one that said the needs of the many outweigh the needs of the few?")
+jez TEXT("jez_AA000", "Who was that smart guy from olden times? The one that said the needs of the many outweigh the needs of the few?")
 
 _rsp = "You mean 18th century philsopher Jeremy Bentham?";
-jez RESP("jez_AA00", 1, _rsp)
-jez ACT("jez_AA00", 1, "jez_AA00_1a")
+jez RESP("jez_AA000", 1, _rsp)
+jez ACT("jez_AA000", 1, "jez_AA000_1a")
 
 _rsp = "Wait, are you talking about Spock from Star Trek?";
-jez RESP("jez_AA00", 2, _rsp)
-jez ACT("jez_AA00", 2, "jez_AA00_2")
+jez RESP("jez_AA000", 2, _rsp)
+jez ACT("jez_AA000", 2, "jez_AA000_2")
 
-jez TEXT("jez_AA00_1a", "Nah nah nah. I saw this movie about him where he died, but then he came back to life on the Genesis Planet in the next one.")
+jez TEXT("jez_AA000_1a", "Nah nah nah. I saw this movie about him where he died, but then he came back to life on the Genesis Planet in the next one.")
 _rsp = "Yes, thats Spock! That movie is called 'The Search for Spock!'";
-jez RESP("jez_AA00_1a", 1, _rsp)
-jez ACT("jez_AA00_1a", 1, "jez_AA00_1b")
+jez RESP("jez_AA000_1a", 1, _rsp)
+jez ACT("jez_AA000_1a", 1, "jez_AA000_1b")
 _rsp = "You are definitely talking about 18th century philosopher Jeremy Bentham.";
-jez RESP("jez_AA00_1a", 2, _rsp)
-jez ACT("jez_AA00_1a", 2, "jez_AA00_1c")
+jez RESP("jez_AA000_1a", 2, _rsp)
+jez ACT("jez_AA000_1a", 2, "jez_AA000_1c")
 // _rsp = "Sure whatever. Still haven't made your case.";
 // jez RESP("jez_AA00_1", 3, _rsp)
 // jez ACT("jez_AA00_1", 3, "jez_AB00")
 
-jez TEXT("jez_AA00_1b", "Ah nevermind. It doesn't matter who it was specifically.")
+jez TEXT("jez_AA000_1b", "Ah nevermind. It doesn't matter who it was specifically.")
 _rsp = "Fair enough. Still haven't made your case though";
-jez RESP("jez_AA00_1b", 1, _rsp)
-jez ACT("jez_AA00_1b", 1, "jez_AB00")
+jez RESP("jez_AA000_1b", 1, _rsp)
+jez ACT("jez_AA000_1b", 1, "jez_AB000")
 
-
-
-jez TEXT("jez_AA00_1c", "Man, old timey philosophy was fuckin' wild bro.")
+jez TEXT("jez_AA000_1c", "Man, old timey philosophy was fuckin' wild bro.")
 _rsp = "You don't know the half of it. I still don't get your argument though. ";
-jez RESP("jez_AA00_1c", 1, _rsp)
-jez ACT("jez_AA00_1c", 1, "jez_AB00")
+jez RESP("jez_AA000_1c", 1, _rsp)
+jez ACT("jez_AA000_1c", 1, "jez_AB000")
 
-jez TEXT("jez_AB00","Think of it this way: the self-sufficiant colonies nearby who need food from here tally up to what, a couple million people?")
+jez TEXT("jez_AB000","Think of it this way: the self-sufficiant colonies nearby who need food from here tally up to what, a couple million people?")
 _rsp = "I think it's something like 70 million in the tri-system area alone.";
-jez RESP("jez_AB00", 1, _rsp)
-jez ACT("jez_AB00", 1, "jez_AB00_1a")
+jez RESP("jez_AB000", 1, _rsp)
+jez ACT("jez_AB000", 1, "jez_AB000_1a")
 _rsp = "If I worked for the Census Bureau you think I'd be armed?";
-jez RESP("jez_AB00", 2, _rsp)
-jez ACT("jez_AB00", 2, "jez_AB00_1b")
+jez RESP("jez_AB000", 2, _rsp)
+jez ACT("jez_AB000", 2, "jez_AB000_1b")
 // jez ACT("jez_AB00", 3, "jez_AB00_1c")
 // _rsp = "I think it's something like 70 million in the tri-system area alone."
 // jez RSP
 
-jez TEXT("jez_AB00_1a", "Exactly! And intel says there's like what, a couple thousand strikers at most?")
+jez TEXT("jez_AB000_1a", "Exactly! And intel says there's like what, a couple thousand strikers at most?")
 _rsp = "The same military 'intelligence' I'm sure isn't taking into account the sympathetic friends and family of each insurgent.";
-jez RESP("jez_AB00_1a", 1, _rsp)
-jez ACT("jez_AB00_1a", 1, "jez_AB00_2")
+jez RESP("jez_AB000_1a", 1, _rsp)
+jez ACT("jez_AB000_1a", 1, "jez_AB000_2")
 
 
-jez TEXT("jez_AB00_1b", "Yeah well, it's a lot compared to a couple thousand strikers at most?")
+jez TEXT("jez_AB000_1b", "Yeah well, it's a lot compared to a couple thousand strikers at most?")
 _rsp = "That makes sense.";
-jez RESP("jez_AB00_1b", 1, _rsp)
-jez ACT("jez_AB00_1b", 1, "jez_AB00_2")
+jez RESP("jez_AB000_1b", 1, _rsp)
+jez ACT("jez_AB000_1b", 1, "jez_AB000_2")
 
-jez TEXT("jez_AB00_2", "Now I ain't sayin' this setup's a paradise. But the way I figure, you gotta be pretty fucking entitled to starve your neighbors over a paycheck.")
+jez TEXT("jez_AB000_2", "Now I ain't sayin' this setup's a paradise. But the way I figure, you gotta be pretty fucking entitled to starve your neighbors over a paycheck.")
 _rsp = "They're not entitled, they're oppressed.";
-jez RESP("jez_AB00_2", 1, _rsp)
-jez ACT("jez_AB00_2", 1, "jez_ABA0")
+jez RESP("jez_AB000_2", 1, _rsp)
+jez ACT("jez_AB000_2", 1, "jez_ABA00")
 
-jez TEXT("jez_ABA0", "Big talk from the guy who signed up to shoot the oppressed for money. My mom worked two jobs a'ight? Both were in a titanium mine. Don't think I don't know what a hard knock life looks like. Yeah these guys could have it better... <1,2,3: Continue...>")
-jez ACT("jez_ABA0", 1, "jez_ABA0_1")
-jez ACT("jez_ABA0", 2, "jez_ABA0_1")
-jez ACT("jez_ABA0", 3, "jez_ABA0_1") 
+jez TEXT("jez_ABA00", "Big talk from the guy who signed up to shoot the oppressed for money. My mom worked two jobs a'ight? Both were in a titanium mine. Don't think I don't know what a hard knock life looks like. Yeah these guys could have it better... <1,2,3: Continue...>")
+jez ACT("jez_ABA00", 1, "jez_ABA00_1")
+jez ACT("jez_ABA00", 2, "jez_ABA00_1")
+jez ACT("jez_ABA00", 3, "jez_ABA00_1") 
  
-jez TEXT("jez_ABA0_1", "But if justice involves making things better for one person at the expense of others, I got some friends who'd like their cases retried.")
+jez TEXT("jez_ABA00_1", "But if justice involves making things better for one person at the expense of others, I got some friends who'd like their cases retried.")
 _rsp = "Damn, fair point.";
-jez RESP("jez_ABA0_1", 1, _rsp)
-jez ACT("jez_ABA0_1", 1, "ABAA")
-_rsp = "But somehow you shooting multiple people over a fight you don't care about is cool.";
-jez RESP("jez_ABA0_1", 2, _rsp)
-jez ACT("jez_ABAO_1", 2, "ABAB")
+jez RESP("jez_ABA00_1", 1, _rsp)
+jez ACT("jez_ABA00_1", 1, "ABAA0")
+_rsp = "How do you square that with being a hired gun?";
+jez RESP("jez_ABA00_1", 2, _rsp)
+jez ACT("jez_ABA00_1", 2, "ABAB0")
+
+// jez TEXT("jez ABAA0", "You're getting bogged down in that college thinking. This is big picture stuff. ")
