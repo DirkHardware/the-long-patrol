@@ -9,11 +9,11 @@
 // 		//waypoints assigned using the coordinates of map markers
 // 		//This is the sugarcane patch at the edge of town
 // 		_grp1 = [getMarkerPos "village1_spawn1a", east, ["OPTRE_Ins_ER_Autorifleman", "OPTRE_Ins_ER_Guerilla_AR"],[],[],[],[],[],180] call BIS_fnc_spawnGroup;
-// 		_wp1 = _grp1 addWaypoint [getMarkerPos "vil1_grp1_wp1", 0];
-// 		_wp1 setWaypointType "SAD"; 
-// 		_wp1 setWaypointSpeed "FULL";
-// 		_wp1 setWaypointBehaviour "STEALTH";
-// 		_wp1 setWaypointFormation "WEDGE";
+		// _wp1 = _grp1 addWaypoint [getMarkerPos "vil1_grp1_wp1", 0];
+		// _wp1 setWaypointType "SAD"; 
+		// _wp1 setWaypointSpeed "FULL";
+		// _wp1 setWaypointBehaviour "STEALTH";
+		// _wp1 setWaypointFormation "WEDGE";
 // 	}
 // 	else {
 // 		//This is behind a nearby building

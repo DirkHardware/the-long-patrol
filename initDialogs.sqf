@@ -41,6 +41,13 @@ sarge ACT("sarge_START",1,"A000")
 // sarge ACT("AA",2,"AC")
 // sarge ACT("AA",3,"AA")
 
+_rsp = "What are my orders?";
+sarge RESP("sarge_START", 2, _rsp)
+sarge setVariable["dialogActsarge_START2", ["orders", 
+  '[west, ["rescue_hostages"], ["Rescue the hostages at the construction site.", "Eliminate the insurgants and rescue the hostages.", "Rescue the Hostages."], objNull, 1, 3, true] call BIS_fnc_taskCreate;
+  closeDialog 0;'
+]];
+
 
 _rsp = "Same thing that's been happening since the dawn of argiculture. Bunch of working class schmucks decided they were getting pushed too hard, withheld their labor, in this case farming sugarcane. Then a bunch of middle class people took having to pay an extra buck for a luxury item personally and sent the Planetary Militia in to quash the strike.  <1,2,3: Continue...>";
 sarge TEXT("A000",_rsp)
